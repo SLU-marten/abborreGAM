@@ -1,0 +1,25 @@
+library(usdm)
+library(mgcv)
+library(fitdistrplus)
+library(raster)
+library(leaflet)
+library(leafem)
+library(leaflet.extras)
+library(rnaturalearth)
+library(dplyr)
+library(ROCR)
+library(GGally)
+library(RColorBrewer)
+
+
+data_N_e <- readRDS("Data/data_N_e.rds")
+data_N_l <- readRDS("Data/data_N_l.rds")
+data_S_e <- readRDS("Data/data_S_e.rds")
+data_S_l <- readRDS("Data/data_S_l.rds")
+
+point_N_e <- readRDS("Data/point_N_e.rds")
+point_N_l <- readRDS("Data/point_N_l.rds")
+point_S_e <- readRDS("Data/point_S_e.rds")
+point_S_l <- readRDS("Data/point_S_l.rds")
+
+rst <- readRDS("Data/rst.rds")
